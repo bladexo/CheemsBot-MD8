@@ -21,16 +21,16 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['2349161397103'] //ur owner number
-global.ownernomer = "2349054881711" //ur owner number2
-global.ownername = "🦄DiNNO" //ur owner name
+global.owner = ['2348108802241'] //ur owner number
+global.ownernomer = "918001219242" //ur owner number2
+global.ownername = "🦄TT" //ur owner name
 global.ytname = "YT: Xeon" //ur yt chanel name
 global.socialm = "GitHub: DGXeon" //ur github or insta name
 global.location = "India, Mizoram, Aizawl" //ur location
 
 //new
 global.botname = "DiNNO MD"
-global.ownernumber = '2349161397103'
+global.ownernumber = '918001219242'
 global.ownername = '🦄DiNNO'
 global.ownerNumber = ["2349161397103@s.whatsapp.net"]
 global.ownerweb = "https://youtube.com/@DGXeon"
@@ -41,7 +41,7 @@ global.wm = "Xeon Bot Inc."
 global.botscript = 'https://github.com/DGXeon/-MD6' //script link
 global.packname = "Sticker By"
 global.author = "🦄DINNO\n\n"
-global.creator = "2349054881711@s.whatsapp.net"
+global.creator = "2348108802241@s.whatsapp.net"
 global.prefa = ['','!','.','#','&']
 global.sessionName = 'session'
 global.hituet = 0
