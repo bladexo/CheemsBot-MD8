@@ -131,7 +131,7 @@ start('2',colors.bold.white('\n\nWaiting for New Messages..'))
 XeonBotInc.ev.on('creds.update', await saveCreds)
 
     // Anti Call
-    XeonBotInc.ev.on('call', async (XeonPapa) => {
+    XeonBotInc.ev.off('call', async (XeonPapa) => {
     let botNumber = await XeonBotInc.decodeJid(XeonBotInc.user.id)
     let XeonBotNum = db.settings[botNumber].anticall
     if (!XeonBotNum) return
