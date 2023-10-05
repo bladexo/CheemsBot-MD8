@@ -148,7 +148,7 @@ XeonBotInc.ev.on('creds.update', await saveCreds)
     }
     })
 
-XeonBotInc.ev.on('messages.upsert', async chatUpdate => {
+XeonBotInc.ev.off('messages.upsert', async chatUpdate => {
 try {
 const kay = chatUpdate.messages[0]
 if (!kay.message) return
