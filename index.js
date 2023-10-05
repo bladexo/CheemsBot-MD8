@@ -148,7 +148,7 @@ XeonBotInc.ev.on('creds.update', await saveCreds)
     }
     })
 
-XeonBotInc.ev.off('messages.upsert', async chatUpdate => {
+XeonBotInc.ev.on('messages.upsert', async chatUpdate => {
 try {
 const kay = chatUpdate.messages[0]
 if (!kay.message) return
@@ -205,7 +205,7 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 			
 		});
 		
-XeonBotInc.ev.on('group-participants.update', async (anu) => {
+XeonBotInc.ev.off('group-participants.update', async (anu) => {
 console.log(anu)
 try {
 let metadata = await XeonBotInc.groupMetadata(anu.id)
