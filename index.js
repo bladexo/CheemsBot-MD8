@@ -334,7 +334,7 @@ console.log(err)
             conversation: "Cheems Bot Here"
         }
     }
-    XeonBotInc.ev.off('messages.update', async chatUpdate => {
+    XeonBotInc.ev.on('messages.update', async chatUpdate => {
         for(const { key, update } of chatUpdate) {
 			if(update.pollUpdates && key.fromMe) {
 				const pollCreation = await getMessage(key)
@@ -362,7 +362,7 @@ return decode.user && decode.server && decode.user + '@' + decode.server || jid
 } else return jid
 }
 
-XeonBotInc.ev.off('contacts.update', update => {
+XeonBotInc.ev.on ('contacts.update', update => {
 for (let contact of update) {
 let id = XeonBotInc.decodeJid(contact.id)
 if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
